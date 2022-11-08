@@ -6,9 +6,12 @@
 }
 
 body{
-  background-color: #B91550;
+  background-color: #006633;
   font-family: Arial, Helvetica, sans-serif;
 }
+h2:first-child{
+  margin-top: 30px;
+} 
 
 h2{
   text-align: center;
@@ -25,7 +28,7 @@ label{
 
 /* CONTAINER SUPERIORE */
 .up-container{
-  background-color: #fff;
+  background-color: #e5efea;
   width: 60%;
   margin: 30px auto;
   padding: 30px;
@@ -43,11 +46,32 @@ label{
   flex-direction: column;
 }
 
+label{
+  color: #004723;
+}
+
+input, select{
+margin-top: 10px;
+padding: 5px;
+border:1px solid #004723;
+border-radius: 5px;
+}
+
+
 /* BOTTONI */
 .btn-up{
   margin-top: 20px;
   display: flex;
   justify-content: center;
+}
+
+button{
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #660033;
+  color: #660033;
+  font-weight: bold;
 }
 
 .btn-up button{
@@ -60,16 +84,26 @@ label{
 }
 
 .down-container{
-  background-color: #fff;
+  background-color: #e5efea;
   width: 60%;
   margin: 30px auto;
   padding: 30px;
 }
 
 .user-data{
-  padding: 20px 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+.passenger, .offer, .train-car, .code, .total-price{
+  padding: 20px;
+}
+
+.passenger{
+  background-color: #66a384;
+}
+
+#offer-price, #car-num, #ticket-code, #ticket-price{
+  margin-top: 30px;
 }

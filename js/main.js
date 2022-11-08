@@ -1,11 +1,12 @@
 const myButton = document.getElementById("genera");
 const show = document.getElementById("data-result")
 
+
 // BOTTONE GENERA
 myButton.addEventListener("click",
   function(){
     show.style.display = "block";
-  
+
     // VARIABILI
     const nomeCognome = document.getElementById("name").value;
     const distanza = parseInt(document.getElementById("km").value);
