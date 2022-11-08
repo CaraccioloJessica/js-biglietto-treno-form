@@ -3,10 +3,10 @@ const myButton = document.getElementById("genera");
 // BOTTONE GENERA
 myButton.addEventListener("click",
   function(){
-    
+
     // VARIABILI
     const nomeCognome = document.getElementById("name").value;
-    const distanza = document.getElementById("km").value;
+    const distanza = parseInt(document.getElementById("km").value);
     const eta = document.getElementById("eta").value;
 
     let prezzo = distanza * 0.21;
