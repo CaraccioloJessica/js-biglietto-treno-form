@@ -1,9 +1,11 @@
 const myButton = document.getElementById("genera");
+const show = document.getElementById("data-result")
 
 // BOTTONE GENERA
 myButton.addEventListener("click",
   function(){
-
+    show.style.display = "block";
+  
     // VARIABILI
     const nomeCognome = document.getElementById("name").value;
     const distanza = parseInt(document.getElementById("km").value);
@@ -35,26 +37,14 @@ myButton.addEventListener("click",
     document.getElementById('ticket-code').innerHTML = Math.floor(Math.random() * (100000 - 90000 + 1)) + 90000;
 
     document.getElementById('ticket-price').innerHTML = prezzoFinale.toFixed(2) + ' euro';
-
-
-    // document.getElementById("biglietto").innerHTML = `Il tuo nome è ${nomeCognome.value}, devi percorrere ${distanza.value} km e puoi usufruire di tariffa ${eta.value}.`;
-
-    
   }
   )
 
+  // BOTTONE CANCELLA RISULTATI
   const cancButton = document.getElementById("annulla");
 
   cancButton.addEventListener("click",
   function(){
-    document.getElementById('pass-name').innerHTML = "";
-
-    document.getElementById('offer-price').innerHTML = "";
-
-    document.getElementById('car-num').innerHTML = "";
-
-    document.getElementById('ticket-code').innerHTML = "";
-
-    document.getElementById('ticket-price').innerHTML = "";
+    show.style.display = "none";
   }
   )

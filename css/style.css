@@ -1,3 +1,4 @@
+/* REGOLE GENERALI */
 *{
   padding: 0;
   margin: 0;
@@ -22,6 +23,7 @@ label{
   text-align: center;
 }
 
+/* CONTAINER SUPERIORE */
 .up-container{
   background-color: #fff;
   width: 60%;
@@ -41,6 +43,7 @@ label{
   flex-direction: column;
 }
 
+/* BOTTONI */
 .btn-up{
   margin-top: 20px;
   display: flex;
@@ -52,6 +55,10 @@ label{
 }
 
 /* CONTENITORE DA NASCONDERE */
+#data-result{
+  display: none;
+}
+
 .down-container{
   background-color: #fff;
   width: 60%;
