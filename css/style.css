@@ -3,3 +3,55 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body{
+  background-color: #B91550;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+  text-align: center;
+  color: #fff;
+}
+
+.up-container{
+  background-color: #fff;
+  width: 60%;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.55);
+}
+
+.dati{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-up{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-up button{
+  margin: 0 20px;
+}
+
+/* CONTENITORE DA NASCONDERE */
+.down-container{
+  background-color: #fff;
+  width: 60%;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.user-data{
+  display: flex;
+  justify-content: space-evenly;
+}
