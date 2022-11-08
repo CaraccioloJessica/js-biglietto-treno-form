@@ -23,7 +23,7 @@ myButton.addEventListener("click",
       prezzoFinale = prezzo - sconto;
     }
 
-    else if (eta == 'Senior') {
+    else if (eta === 'Senior') {
       offerta = 'Sconto Over65'
       sconto = prezzo * 40 / 100;
       prezzoFinale = prezzo - sconto;
