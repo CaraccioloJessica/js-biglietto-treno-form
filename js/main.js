@@ -7,7 +7,7 @@ const myButton = document.getElementById("genera");
 // BOTTONE GENERA
 myButton.addEventListener("click",
   function(){
-    document.getElementById("biglietto").innerHTML = `Il tuo nome è ${nomeCognome.value} e devi percorrere ${distanza.value} km`;
+    document.getElementById("biglietto").innerHTML = `Il tuo nome è ${nomeCognome.value}, puoi usufruire di tariffa ${eta.value} e devi percorrere ${distanza.value} km.`;
 
     nomeCognome.value = "";
     distanza.value = "";
