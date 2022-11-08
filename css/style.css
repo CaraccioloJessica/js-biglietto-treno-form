@@ -14,6 +14,14 @@ h2{
   color: #fff;
 }
 
+input::placeholder{
+  text-align: center;
+}
+
+label{
+  text-align: center;
+}
+
 .up-container{
   background-color: #fff;
   width: 60%;
@@ -52,6 +60,9 @@ h2{
 }
 
 .user-data{
+  padding: 20px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   display: flex;
   justify-content: space-evenly;
 }
