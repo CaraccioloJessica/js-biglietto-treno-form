@@ -7,24 +7,37 @@
   <title>Form biglietto treno</title>
 </head>
 <body>
-  <h1 id="title">
-    Calcola il prezzo del tuo biglietto
-  </h1>
+  <main>
+    <h2>
+      Calcola il prezzo del tuo biglietto
+    </h2>
+
+    <div class="card">
+      <label for="name">Nome e Cognome</label>
+      <input type="text" id="name" placeholder="Nome Cognome">
+    </div>
+    
+    <div class="card">
+      <label for="km">Km da percorrere</label>
+      <input type="text" id="km" placeholder="Km da percorrere">
+    </div>
+    
+    <div class="card">
+    <label for="eta">Fascia d'età</label>
+    <select id="eta">
+      <option value="Adulto">Aduto</option>
+      <option value="Senior">Senior (Over 65)</option>
+      <option value="Giovani">Giovani (Under 18)</option>
+    </select>
+  </div>
+
+  <div>
+    <button id="genera">Genera</button>
+    <button id="annulla">Annulla</button>
+  </div>
   
-  <input type="text" id="name" placeholder="Nome Cognome">
-  <input type="text" id="km" placeholder="Km da percorrere">
-  <select id="eta">
-    <option value="Adulto">Aduto</option>
-    <option value="Senior">Senior (Over 65)</option>
-    <option value="Giovani">Giovani (Under 18)</option>
-  </select>
-  <button id="genera">Genera</button>
-
-  <h2 id="biglietto">
-
-  </h2>
-  
-
+  <h2 id="biglietto"></h2>
+</main>
 
   <script src="js/main.js"></script>
 
