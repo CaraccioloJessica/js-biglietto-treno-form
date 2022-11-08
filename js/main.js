@@ -33,9 +33,9 @@ myButton.addEventListener("click",
 
     document.getElementById('offer-price').innerHTML = offerta;
 
-    document.getElementById('car-num').innerHTML = Math.floor(Math.random()*9) + 1;
+    document.getElementById('car-num').innerHTML = Math.floor(Math.random()*11) + 1;
 
-    document.getElementById('ticket-code').innerHTML = Math.floor(Math.random() * (100000 - 90000 + 1)) + 90000;
+    document.getElementById('ticket-code').innerHTML = Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000;
 
     document.getElementById('ticket-price').innerHTML = prezzoFinale.toFixed(2) + ' euro';
   }
