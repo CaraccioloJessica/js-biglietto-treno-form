@@ -9,36 +9,42 @@
 </head>
 <body>
   <main>
+    <!-- TITOLO SUPERIORE -->
     <h2>
       Calcola il prezzo del tuo biglietto
     </h2>
 
-    <div class="card">
-      <label for="name">Nome e Cognome</label>
-      <input type="text" id="name" placeholder="Nome Cognome">
+    <!-- CONTENITORE SUPERIORE INSERIMENTO DATI -->
+    <div class="up-container">      
+      <div class="card">
+        <label for="name">Nome e Cognome</label>
+        <input type="text" id="name" placeholder="Nome Cognome">
+      </div>
+    
+      <div class="card">
+        <label for="km">Km da percorrere</label>
+        <input type="text" id="km" placeholder="Km da percorrere">
+      </div>
+    
+      <div class="card">
+        <label for="eta">Fascia d'età</label>
+        <select id="eta">
+          <option value="Adulto">Aduto</option>
+          <option value="Senior">Senior (Over 65)</option>
+          <option value="Giovani">Giovani (Under 18)</option>
+        </select>
+      </div>
+      
+      <!-- BOTTONI PARTE INSERIMENTO DATI -->
+      <div>
+        <button id="genera">Genera</button>
+        <button id="annulla">Annulla</button>
+      </div>
     </div>
     
-    <div class="card">
-      <label for="km">Km da percorrere</label>
-      <input type="text" id="km" placeholder="Km da percorrere">
-    </div>
-    
-    <div class="card">
-    <label for="eta">Fascia d'età</label>
-    <select id="eta">
-      <option value="Adulto">Aduto</option>
-      <option value="Senior">Senior (Over 65)</option>
-      <option value="Giovani">Giovani (Under 18)</option>
-    </select>
-  </div>
-
-  <div>
-    <button id="genera">Genera</button>
-    <button id="annulla">Annulla</button>
-  </div>
-  
-  <h2 id="biglietto"></h2>
-</main>
+    <!-- OUTPUT PROVA -->
+    <h2 id="biglietto"></h2>
+  </main>
 
   <script src="js/main.js"></script>
 
