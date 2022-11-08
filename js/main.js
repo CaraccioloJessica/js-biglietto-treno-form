@@ -47,5 +47,9 @@ myButton.addEventListener("click",
   cancButton.addEventListener("click",
   function(){
     show.style.display = "none";
+
+    document.getElementById("name").value = "";
+
+    document.getElementById("km").value = "";
   }
   )
