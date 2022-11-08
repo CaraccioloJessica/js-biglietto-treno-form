@@ -38,5 +38,23 @@ myButton.addEventListener("click",
 
 
     // document.getElementById("biglietto").innerHTML = `Il tuo nome è ${nomeCognome.value}, devi percorrere ${distanza.value} km e puoi usufruire di tariffa ${eta.value}.`;
+
+    
   }
-)
+  )
+
+  const cancButton = document.getElementById("annulla");
+
+  cancButton.addEventListener("click",
+  function(){
+    document.getElementById('pass-name').innerHTML = "";
+
+    document.getElementById('offer-price').innerHTML = "";
+
+    document.getElementById('car-num').innerHTML = "";
+
+    document.getElementById('ticket-code').innerHTML = "";
+
+    document.getElementById('ticket-price').innerHTML = "";
+  }
+  )
